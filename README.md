@@ -59,3 +59,65 @@ Used to containerize the application, ensuring consistent environments across de
 
 ### 8. REST API
 Defines how frontend and backend communicate securely and efficiently.
+## Database Design
+
+The database for the Airbnb Clone project is designed to manage users, properties, bookings, payments, and reviews. It follows a relational structure to ensure data integrity and efficient querying.
+
+### **Entities and Their Fields**
+
+#### 1. Users
+- **id**: unique identifier for each user  
+- **name**: full name of the user  
+- **email**: user’s email address (must be unique)  
+- **password**: hashed password for security  
+- **role**: defines if the user is a host or guest  
+
+#### 2. Properties
+- **id**: unique identifier for each property  
+- **title**: short name or title of the listing  
+- **description**: detailed information about the property  
+- **location**: city or area where the property is located  
+- **price_per_night**: rental cost per night  
+- **host_id**: references the user who owns the property  
+
+#### 3. Bookings
+- **id**: unique identifier for each booking  
+- **user_id**: references the user making the booking  
+- **property_id**: references the booked property  
+- **check_in**: start date of the stay  
+- **check_out**: end date of the stay  
+- **status**: booking status (e.g., confirmed, cancelled)  
+
+#### 4. Payments
+- **id**: unique identifier for each payment  
+- **booking_id**: references the related booking  
+- **amount**: total amount paid  
+- **payment_date**: date of payment  
+- **payment_method**: e.g., credit card, PayPal  
+
+#### 5. Reviews
+- **id**: unique identifier for each review  
+- **user_id**: references the user who wrote the review  
+- **property_id**: references the reviewed property  
+- **rating**: numerical rating (1–5 stars)  
+- **comment**: optional text feedback  
+
+---
+
+### **Entity Relationships**
+
+- A **User** can list **multiple Properties** (1-to-many).  
+- A **Property** can have **many Bookings** (1-to-many).  
+- A **Booking** is associated with **one Payment** (1-to-1).  
+- A **User** can make **many Bookings** (1-to-many).  
+- A **Property** can have **many Reviews**, and a **User** can write **many Reviews** (many-to-many relationship handled through the Reviews table).
+
+---
+
+### **Example Schema Diagram (Conceptually)**
+
+User (1) ——< Property (many)
+User (1) ——< Booking (many)
+Booking (1) ——1 Payment
+Property (1) ——< Review (many)
+User (1) ——< Review (many)
