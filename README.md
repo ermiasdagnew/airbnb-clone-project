@@ -19,3 +19,17 @@ The Airbnb Clone backend project simulates a booking platform where users can re
 - Redis
 - Docker
 - CI/CD Pipelines
+Team Roles
+## Team Roles
+
+### Backend Developer
+Responsible for implementing API endpoints, server-side logic, and database interactions to ensure the backend works correctly.
+
+### Database Administrator (DBA)
+Manages the database design, indexing, and optimization to ensure efficient and secure data storage.
+
+### DevOps Engineer
+Handles deployment, server configuration, monitoring, and CI/CD pipelines to ensure smooth and reliable application delivery.
+
+### QA Engineer
+Tests backend functionalities, identifies bugs, and ensures that features work as expected before release.
