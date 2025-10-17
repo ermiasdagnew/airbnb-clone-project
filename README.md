@@ -145,6 +145,7 @@ Implements caching and indexing for faster data retrieval and better performance
 It enhances user experience by reducing response times during searches and bookings.
 
 🔒 API Security
+
 Security is a core part of the Airbnb Clone backend architecture. Since the platform handles sensitive information such as user credentials, booking details, and payment data, multiple security measures will be implemented to ensure data integrity and privacy.
 1. Authentication
 Only registered and verified users can access protected endpoints.
