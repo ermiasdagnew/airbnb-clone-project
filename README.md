@@ -33,3 +33,29 @@ Handles deployment, server configuration, monitoring, and CI/CD pipelines to ens
 
 ### QA Engineer
 Tests backend functionalities, identifies bugs, and ensures that features work as expected before release.
+Technology Stack
+## Technology Stack
+
+### 1. Python
+The core programming language used to develop the backend logic and manage data flow between the database and the user interface.
+
+### 2. Django
+A powerful Python web framework used to build scalable backend services and RESTful APIs quickly and securely.
+
+### 3. PostgreSQL
+A relational database system used to store and manage user, property, and booking data efficiently.
+
+### 4. HTML/CSS
+Used to structure and style the web pages for the user interface, ensuring a clean and responsive design.
+
+### 5. JavaScript
+Adds interactivity and dynamic behavior to the frontend, improving the user experience.
+
+### 6. Git & GitHub
+Used for version control, allowing team members to collaborate and track changes to the project codebase.
+
+### 7. Docker (optional)
+Used to containerize the application, ensuring consistent environments across development and production.
+
+### 8. REST API
+Defines how frontend and backend communicate securely and efficiently.
