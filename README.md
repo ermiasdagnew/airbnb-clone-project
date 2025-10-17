@@ -143,3 +143,27 @@ This helps maintain trust and transparency within the platform.
 6. Data Optimization
 Implements caching and indexing for faster data retrieval and better performance.
 It enhances user experience by reducing response times during searches and bookings.
+
+🔒 API Security
+Security is a core part of the Airbnb Clone backend architecture. Since the platform handles sensitive information such as user credentials, booking details, and payment data, multiple security measures will be implemented to ensure data integrity and privacy.
+1. Authentication
+Only registered and verified users can access protected endpoints.
+We’ll use secure methods such as JWT (JSON Web Tokens) or OAuth2 to verify user identity and prevent unauthorized access.
+2. Authorization
+Different roles (e.g., admin, host, user) will have distinct permissions.
+Role-based access control ensures users can only perform actions that align with their roles — for example, only property owners can edit their listings.
+3. Data Encryption
+Sensitive data such as passwords and payment details will be encrypted using modern algorithms like bcrypt and SSL/TLS.
+This prevents data theft during transmission and storage.
+4. Rate Limiting
+Implements limits on the number of API requests per user to prevent DDoS attacks and brute-force attempts.
+This keeps the platform stable and responsive for all users.
+5. Input Validation and Sanitization
+All user input will be validated and sanitized to protect against SQL Injection, Cross-Site Scripting (XSS), and Command Injection attacks.
+Ensures that only safe and properly formatted data enters the system.
+6. Secure Payment Handling
+Payment APIs will follow PCI-DSS compliance standards.
+Sensitive transaction data will be processed through secure payment gateways to maintain trust and integrity.
+7. Regular Security Audits
+The backend will include periodic vulnerability scans and dependency updates.
+This ensures that security standards are maintained as the project evolves.
