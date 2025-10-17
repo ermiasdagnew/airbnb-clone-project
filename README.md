@@ -121,6 +121,7 @@ User (1) ——< Booking (many)
 Booking (1) ——1 Payment
 Property (1) ——< Review (many)
 User (1) ——< Review (many)
+
 ✨ Feature Breakdown
 The Airbnb Clone project includes key features that enable users to interact with the platform just like in a real-world booking system. Each feature plays an important role in delivering a complete and seamless user experience.
 1. User Management
